@@ -1,0 +1,426 @@
+DAY I
+
+    BASICS OF PYTHON
+
+	1. Print function
+		-> use print() {then "" for strings} to avoid syntax error.
+		-> try to avoid using "" twice in a line.
+		-> to print a text on separate lines use \n (without any space) using only one fuxn.
+
+	2. String Concatenation:
+		-> takes the characters of the string to merge them into one  (without any space btwn them). 
+		-> use "text" + "text" to concatenate.
+
+	3. Space in Python matters to avoid indentation errors.
+
+	4. Debugging:
+		-> look for the errors and try to debug or fix it.
+		-> to debug your code just copy and paste on thonny if error is spotted then look for it on stack overflow.
+
+	5. Input function
+		-> Code execution of the further lines happens only when an input is provided.
+		-> works like the print fuxn and the (" ") are used.  
+
+	6. Comment: 
+		->  a '#' is used before the text.                            
+		-> can be used to explain our code.
+		-> is never executed and ignored by the comp.
+		-> to add a line to comment select the line and press ctrl + /.
+		-> to remove press ctrl + z.
+
+	7.  Length function:
+		-> use to get the no. of char. in the given string.
+		-> len() is used.
+
+	8. Variables
+		-> try to use a meaningful name to make ur code readable.
+		-> a variable can be anything, but try to avoid fuxns as the name of vari.
+		-> can be changed at any point of time.
+		-> use a single unit as a variable or sep. two words using an '_'.
+		-> avoid no. at the beginning of the name of variables.
+	
+################################################################################################################################################
+
+DAY II
+
+DATA TYPES
+	1. String:
+		-> all the text u type, is also the default datatype.
+		-> use [place] to print the alphabet at a particular place in the text(numbering starts as 0,1,...)
+		-> a set of numbers kept inside the quotes behave as a string.
+
+	2. Integer:
+		-> simple numbers are taken as numbers itself by the comp.
+		-> large nos. like 123,456,789 can be written as 123_456_789 in python.
+
+	3. Float:
+		-> numbers with a point or decimal point.
+
+	4. Boolean:
+		-> has only two values 'True' or 'False'.
+
+Note*: to check the type of data you have entered use type(your input) and put it in print fuxn.
+
+
+Changing data type:
+	1. put your data into str(), int() or float() function to change or describe its type. 
+
+Operations:
+	1. Addition: no.1 + no.2
+	2. Subtraction: no.1 - no.2
+	3. Multiplication: no.1 * no.2
+	4. Division: no.1 / no.2 (always gives floating point number)	
+	5. Exponent: first no. ** second no. (raises the power)
+
+		-> operations are usually performed as ()off> **> *> /> +> and -, but * & / as well as + & - are given 
+		   equal prio. so the operations are executed from left to right.
+		-> if we convert a floating pn. to integer all the places after the decimal are vanished.
+		-> a fuxn round() is used to round off the no. and ", number" is used to specify the precision or uptil
+		   how many decimal places runding to be done.
+
+	6. Floor division:
+		-> uses 2 forward slashes '//' and converts the quotient directly into an integer(no. is not rounded off).
+
+	7. +=, -=, *= and /= are used to add, subtract, multiply or divide the upcoming value to the previous value of vari.
+
+	8. f-strings:
+		-> helps in concatenating diff. datatypes at once without changing or specifying its type.
+	
+################################################################################################################################################
+
+DAY III
+
+A. Conditional statements:used when you have some conditions for your code to execute.
+
+NOTE*: when the conditional statements are used after our condition a ':' is used, followed by a strict indentation 
+       pattern which remains unchanged for the upcoming conditions.
+       
+	1. if statement:
+		-> when the input satisfies the given condition only then execution of code occurs or it will be ignored.
+
+	2. else statement:
+		-> when the above conditions does not hold, true only then will it come to action.
+
+	3. elif statement:
+		-> when there are more than two conditions instead of using if we use elif or elseif statement.
+
+
+B.Comparison operators:
+	1. greater than (>)
+	2. less than (<)
+	3. greater than or equal to: (>=)
+	4. less than or equal to (<=)
+	5. equal to (==)
+	6. not equal to (!=)
+
+NOTE*: in python '=' is used to assign the value on the rhs to the lhs variable whereas
+        '==' is used to check if lhs value and rhs value are equal or not.
+
+C. Modulo(%) sign gives us the remainder after dividing the first no. with the second one.
+
+D. Nested if/else statements:
+	-> if the condition for an if or else statement comes true then another if/else condition within it.
+
+E. Logical operators:
+	1. and operator: only if both the values are true, the answer will be true.
+	2. or operator: if either of the value first or second or both are true then the entire statement is true. 
+	3. not operator: it reverses the value from true to false and vice versa.
+
+F. lower() function: reduce all the alhabets to lower case.
+G. count() function: no. of times an alphabet occurs in a string.
+
+################################################################################################################################################
+
+DAY IV
+
+                                                                SOME MORE THINGS IN  PYTHON DAY 4
+Randomisation and python lists
+	1. random module was generated by python to help us create random numbers without getting into complex math to generate pseudorandom 
+	   numbers.
+	2. we can use a value specified in a different file by using import filename.
+	3. to pick a random integer b/w any two nos. random.randint(I no., II no.) is used inclusive both nos.
+	4. random.random() to generate a random float b/w 0 and 1 excluding 1, i.e., [0,1)
+	5. to get a random float greater than 1 multiply the random float by any integer.
+   for more detailed information on randomisation refer: askpython.com/python-modules/python-random-module-generate-random-numbers-sequences
+
+   Python lists:
+	1. they can contain multiple datatypes kept within[], items separated with a ,.
+	2. the data stored within the list have an order which is same as the order they are kept in the list.
+	3. the item in the list at a particular position can be printed by using a [position in the list] where the numbering starts from 0.
+	   position of the list is the offset from the beginning or index and the negative index starts from the end of the list.
+	4. list[position] = new name to the item: to change the items of the list.
+	5. list.append: adds a new item to the end of the list.
+	6. list.extend is used to add a bunch of items to the list.
+
+     more lists refer: docs.python.org/3/tutorial/datastructures.html	
+
+     Index Errors: when something is out of index or cannot be found.
+     Nested lists or list within a list:
+	1. list = [list1, list2]
+
+################################################################################################################################################
+
+DAY V
+
+LOOPS
+  1. Loops allow us to execute the same line of code multiple times.
+  2. they are written as for 'what you call the single element in the list' in 'variable used for the list'
+  3. For loops in range:
+	->for run the loop in a particular range of numbers use 
+	      for number in range(first num., second num., third num.)
+	      first num.: from where the loop is to start, including the num. itself.
+	      second num.: uptil where the loop will run, excluding the num.
+	      third num.: the step size of the loop or to jump on the nth num., by default it is set to 1 so all the nums. are printed.
+
+################################################################################################################################################
+
+DAY VI
+
+Defining and calling your own functions
+	1. you can define your own functions by using a def and entering the name you want to give your function followed by a set of parenthesis and :.
+	2. then specify what you want the function to do within indentation.
+	3. enter the function you created for it to come to action.
+
+WHILE LOOP:
+	1. the code keeps running repeatedly if the condition is true and stops once the condition is false.
+	2. when under the While loop if, elif and else statements can be used with indentation.
+
+#################################################################################################################################################
+
+DAY VII
+
+HANGMAN CHALLENGES_______________________________________________________________________________________________________________________________
+
+#################################################################################################################################################
+
+DAY VIII
+
+FUNCTIONS WITH INPUTS
+  1.def my_function(name)
+    -> #do this with name.
+    -> name provided to the data is known as the Parameter.
+    -> and the value assigned to this function is the Argument.
+    -> the following type of arguments are positional or depends on the position so for code
+      # def greet_with_name(name, location):
+	print(f"Hello {name}")
+	print(f"How's the weather today in {location}?")
+
+	greet_with_name("somewhere", "jack")
+
+      # The output will be:
+        Hello somewhere
+	How's the weather today in jack?
+    -> so instead keyword arguments are used, where
+      # the calling function would be greet_with_name(name = "jack", location = "somewhere")
+
+  TO USE THE CLEAR FUNCTION OR IMPORT CLEAR WHILE USING VSCODE USE:
+    import os
+    def clear():
+    	os.system('cls') to define the function
+
+    clear() to call the function
+
+#################################################################################################################################################
+
+DAY IX
+
+Dictionaries in python:
+  1. allow us to group together and tag related piece of information.
+    every dictionary has two parts to it:
+      -> Key: the word itself
+      -> Value: definition of the word 
+  2. items within the lists are kept within the {} and separated with a ','.
+  3. if the key is a string then it is given under a set if "key" and it's definition is kept within the "definition" too,correct datatypes 
+     should be used
+
+#Retrieving items from the dictionary
+print(dictionary name["key written exactly same way as in the dictionary"]), use correct datatype.
+  -> do not make a typo while providing the key to the dictionary to avoid key error.
+
+#Adding new items to the dictionary
+dictionary name["key"] = "definition of key."
+
+#Creating an empty dictionary
+empty_dictionary = {}
+
+#Wipe an entire dictionary
+dictionary name = {}
+
+#Edit an item in a dictionary
+dictionary name["key"] = "New definition to the key."
+print(dictionary name)
+
+#Loop through the dictionary
+for key in dictionary name :
+  print(key) would only print the keys.
+
+to print key along with its definition:
+for key in dictionary name :
+  print(key)
+  print(dictinary name[key])
+
+####################################################################################################################################################
+
+DAY X
+
+Functions with outputs
+   1. The python return statement is used in a function to return the value to the caller program, which is used only within the function.
+   2. If the return statement contains an expression, it’s evaluated first and then the value is returned, which terminates the execution of 
+      the function
+   3. A function can have multiple return statements having mutliple types of values. When any of them is executed, the function terminates.
+
+Return keyword
+   1. The return keyword is to exit a function and return a value.
+   2. Statements after the return line will not be executed as:
+         def myfunction():
+            return 3+3
+            print("Hello, World!")
+
+         print(myfunction())
+
+      For the given code, the result would be given as:
+         6, which proves that the value of 3 + 3 is returned to the function but the next statement never executes.
+   3. multiple return statements can be used in a function
+
+
+Docstrings:
+   Docstrings or documentation strings are usually given after the declaration of the function.
+   1. The first indended line of defining a function within """ """ or''' ''' are Docstrings.
+   2. provide a convenient way of associating documentation with python modules, functions, classes, and methods.
+      or they are used to document our code.
+   3. These docstrings can be accessed using the __doc__ attribute.
+
+Print VS Return
+  1. Use print when you want to show a value as an output. Return is a keyword. When a return statement is reached, Python will stop the execution 
+     of the current function, sending a value out to where the function was called. Use return when you want to send a value from one point in 
+     your code to another. Using return changes the flow of the program.
+
+Flags
+  1. A ﬂag variable can be used to let one part of your program know when something happens in another part of the program.
+
+Recursion
+   1. Recursion is a common mathematical and programming concept. It means that a function calls itself. This has the benefit of meaning that we 
+      can loop through data to reach a result.
+
+######################################################################################################################################################
+
+DAY XI
+
+RULES FOR THE BLACKJACK_______________________________________________________________________________________________________________________________
+
+######################################################################################################################################################
+
+DAY XII
+
+SCOPES 
+	A variable is only available from inside the region it is created. This is called scope.
+
+TYPES OF SCOPES
+	1. Local Scope:
+		A variable created inside a function belongs to the local scope of that function, and can only be used inside that function.
+			A variable created inside a function is available inside that function for eg.,:
+
+			def myfunc():
+				x = 300
+				print(x)
+
+			myfunc()
+
+	2. Function Inside Function
+		As in the example above, the variable x is not available outside the function, but it is available for any function inside the function:
+		The local variable can be accessed from a function within the function for eg.,:
+
+			def myfunc():
+				x = 300
+				def myinnerfunc():
+					print(x)
+				myinnerfunc()
+
+			myfunc()
+
+	3. Global Scope
+		A variable created in the main body of the Python code is a global variable and belongs to the global scope.
+		Global variables are available from within any scope, global and local.
+		A variable created outside of a function is global and can be used by anyone for eg.,:
+
+			x = 300
+
+			def myfunc():
+				print(x)
+
+			myfunc()
+
+			print(x)
+
+NOTE*: To set a Global constant i.e., if you never wish to change it's value then set it as a Global Scope with all uppercases, if you do so,
+			 then everytime you mention the variable, you get a warning that Global constant cannot be changed.
+
+			 In python, there is no Block Scope. Inside a if/else/for/while, code block is the same as outside.
+
+	BLOCK SCOPE:
+		Block scoping means declaring a variable, not just inside a function, but around any curly brackets like if statements or loops. The 
+		variable itself let i is still in memory, but the engine just won't allow you to access it like before when we used var.
+
+#########################################################################################################################################################
+
+DAY XIII
+
+DEBUGGING PROJECTS________________________________________________________________________________________________________________________________________
+
+##########################################################################################################################################################
+
+DAY XIV
+
+
+HIGHER OR LOWER GAME______________________________________________________________________________________________________________________________________
+
+##########################################################################################################################################################
+
+DAY XV
+
+IDE: This stands for Integrated Development Environment.
+	1. This is a software that helps us with linting our code, finding errors in it, guides us with our coding style, helps us debug the code while we are
+	creating our code. Some of the popular IDE's are: Jupyter, spider, vim, thonny, vs code, atom ,sublime etc.
+
+##########################################################################################################################################################
+
+DAY XVI
+
+OOP(OBJECT ORIENTED PROGRAMMING):
+	Object Oriented programming (OOP) is a programming paradigm that relies on the concept of classes and objects. It is used to structure a software 
+	program into simple, reusable pieces of code blueprints (usually called classes), which are used to create individual instances of objects. 
+	There are many object-oriented programming languages including JavaScript, C++, Java, and Python.
+
+	Take car as an object and let speed and fuel be its attributes. Then,
+
+	1. ATTRIBUTES: variables modelled for an associated object.
+		To access the attribute, use object.attribute as car.speed to get a hold of speed of the car.
+	
+	2. METHODS: functions that a particular modeled object can do.
+		Functions tied with an object like object.function_associated as car.stop()
+
+	3. CLASS: blueprints in OOP.
+		-> A class is usually written with first letter capilalised(Pascal Case) and words instead of being separated with '_', another capital letter
+		is used as: CarBlueprint.
+
+	4. OBJECT: individual objects that are generated from the blueprint.
+		as: car = CarBlueprint()
+
+PROCEDRAL PROGRAMMING:
+	Procedural programming is a programming paradigm, derived from imperative programming, based on the concept of the procedure call. Procedures (a 
+	type of routine or subroutine) simply contain a series of computational steps to be carried out. Any given procedure might be called at any point 
+	during a program's execution, including by other procedures or itself. The first major procedural programming languages appeared circa 1957–1964, 
+	including Fortran, ALGOL, COBOL, PL/I and BASIC. Pascal and C were published circa 1970–1972.
+
+After importing the PrettyTable class from the prettytable module:
+	1. Start using with creating an object 
+	2. Columns are added one at a time, using object.add_column("Heading-to-the-table", ['elements contained in it', ''])
+	3. TEXT ALIGNMENT:
+		-> object.align = "l/ r/ c" *c(center is default)
+
+NOTE*: 1. PascalCase      2. camelCase      3. snake_case
+
+CONSTRUCTOR:
+	Constructing or initialisation of an object.
+	In python creating a constructor is done using the init function, written as:
+		def __init__(self):
